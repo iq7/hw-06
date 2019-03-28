@@ -182,7 +182,8 @@ extension GroupsViewController: UITableViewDelegate, UITableViewDataSource {
 extension GroupsViewController {
     
     private func getMyGroups() {
-        AlamofireService.instance.getGroups(delegate: self)
+        let service = AlamofireService.instance
+        AlamofireProxy(service: service).getGroups(delegate: self)
     }
     
     private func getGroups(by search: String) {
@@ -217,11 +218,13 @@ extension GroupsViewController {
     }
     
     private func leaveGroup(by gid: Int) {
-        AlamofireService.instance.leaveGroup(gid: gid, delegate: self)
+        let service = AlamofireService.instance
+        AlamofireProxy(service: service).leaveGroup(gid: gid, delegate: self)
     }
     
     private func joinGroup(by gid: Int) {
-        AlamofireService.instance.joinGroup(gid: gid, delegate: self)
+        let service = AlamofireService.instance
+        AlamofireProxy(service: service).joinGroup(gid: gid, delegate: self)
     }
 }
 

@@ -61,6 +61,8 @@
 		AA5766FD2160F0C10029F786 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5766FC2160F0C10029F786 /* NewsViewController.swift */; };
 		AA5766FF2160F2CD0029F786 /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5766FE2160F2CD0029F786 /* New.swift */; };
 		D9AA87DC224CBED60034413D /* CoffeeDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AA87DB224CBED60034413D /* CoffeeDecorator.swift */; };
+		D9AA87DE224CDBE90034413D /* NetServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AA87DD224CDBE90034413D /* NetServiceInterface.swift */; };
+		D9AA87E0224CDC710034413D /* AlamofireProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AA87DF224CDC710034413D /* AlamofireProxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +123,8 @@
 		B1F60E259C4E88A48D0AC259 /* Pods-homeWork_1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homeWork_1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-homeWork_1/Pods-homeWork_1.debug.xcconfig"; sourceTree = "<group>"; };
 		CE1F4887F01F3E518C13D6ED /* Pods-homeWork_1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homeWork_1.release.xcconfig"; path = "Pods/Target Support Files/Pods-homeWork_1/Pods-homeWork_1.release.xcconfig"; sourceTree = "<group>"; };
 		D9AA87DB224CBED60034413D /* CoffeeDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDecorator.swift; sourceTree = "<group>"; };
+		D9AA87DD224CDBE90034413D /* NetServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetServiceInterface.swift; sourceTree = "<group>"; };
+		D9AA87DF224CDC710034413D /* AlamofireProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireProxy.swift; sourceTree = "<group>"; };
 		FB03EE607AE3B19FD932EA7A /* Pods_homeWork_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_homeWork_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -234,6 +238,8 @@
 				8442ABAA2192EC0D003DDA6A /* VkResponseParser.swift */,
 				8442ABAF21957D2D003DDA6A /* RealmWorker.swift */,
 				AA3D1EB021B25109000ED1C1 /* FirebaseService.swift */,
+				D9AA87DD224CDBE90034413D /* NetServiceInterface.swift */,
+				D9AA87DF224CDC710034413D /* AlamofireProxy.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -578,6 +584,7 @@
 				844ACE352186BFC500565895 /* VkFriend.swift in Sources */,
 				8415662F21B7918C00AF9803 /* MainGroupViewController.swift in Sources */,
 				8442AB9721870B13003DDA6A /* VkPhoto.swift in Sources */,
+				D9AA87DE224CDBE90034413D /* NetServiceInterface.swift in Sources */,
 				84C1209B2161C6ED0044CBEB /* MyGroupCell.swift in Sources */,
 				AA5766D92160A72F0029F786 /* LoginViewController.swift in Sources */,
 				8424E54D217485B400188E61 /* CustomSquareIndicator.swift in Sources */,
@@ -587,6 +594,7 @@
 				8424E55E21774C8F00188E61 /* CustomUnwindSegue.swift in Sources */,
 				8424E5512176E7D900188E61 /* CustomSegue.swift in Sources */,
 				AA5766F02160D82B0029F786 /* FriendList.swift in Sources */,
+				D9AA87E0224CDC710034413D /* AlamofireProxy.swift in Sources */,
 				84EC564A21A2A2DB00C8542C /* VkFeed.swift in Sources */,
 				8424E55C2177401700188E61 /* CustomNavigationController.swift in Sources */,
 				AA5766FA2160EFE50029F786 /* NewsTableViewCellOld.swift in Sources */,

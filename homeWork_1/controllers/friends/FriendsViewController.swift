@@ -121,7 +121,8 @@ extension FriendsViewController {
                 print(error.localizedDescription)
             }
         }
-        AlamofireService.instance.getFriends(delegate: self)
+        let service = AlamofireService.instance
+        AlamofireProxy(service: service).getFriends(delegate: self)
     }
     
     private func migrateFriends() {
