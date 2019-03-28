@@ -39,13 +39,12 @@ protocol VkApiCommentsDelegate {
     func returnComments(_ comments: [VkComment])
 }
 
-
 class AlamofireService {
-    
     static let instance = AlamofireService()
     private init(){}
-    
-    
+}
+
+extension AlamofireService: NetFriendServiceInterface {
     // //Друзья
     func getFriends(delegate: VkApiFriendsDelegate) {
         let method = "friends.get"
@@ -63,12 +62,11 @@ class AlamofireService {
                 DispatchQueue.main.async {
                     delegate.returnFriends(friends)
                 }
-                
-                
         }
     }
-    
-    
+}
+
+extension AlamofireService: NetGtoupServiceInterface {
     // //Группы
     func getGroups(delegate: VkApiGroupsDelegate) {
         let method = "groups.get"
@@ -152,8 +150,9 @@ class AlamofireService {
                 }
         }
     }
-    
-    
+}
+
+extension AlamofireService: NetPhotoServiceInterface {
     func getPhotos(delegate: VkApiPhotosDelegate) {
         let method = "photos.getAll"
         let fullRow = "\(GlobalConstants.vkApi)\(method)"//&v5.87
@@ -197,8 +196,9 @@ class AlamofireService {
                 }
         }
     }
-    
-    
+}
+
+extension AlamofireService: NetNewsServiceInterface {
     func getNews(startFrom: String, delegate: VkApiFeedsDelegate) {
         let method = "newsfeed.get"
         let fullRow = "\(GlobalConstants.vkApi)\(method)"
@@ -219,8 +219,9 @@ class AlamofireService {
                 }
         }
     }
-    
-    
+}
+
+extension AlamofireService: NetCommentsServiceInterface {
     func getComments(ownerId: Int, postId: Int, delegate: VkApiCommentsDelegate) {
         //delegate: VkApiFeedsDelegate) {
         let method = "wall.getComments"
@@ -247,6 +248,5 @@ class AlamofireService {
                 }
         }
     }
-    
 }
 

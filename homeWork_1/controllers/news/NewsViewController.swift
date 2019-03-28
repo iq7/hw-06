@@ -53,7 +53,8 @@ class NewsViewController: UIViewController {
     private func prepareGetFeeds(needClearNews: Bool) {
         isLoad = true
         self.needClearNews = needClearNews
-        AlamofireService.instance.getNews(startFrom: needClearNews ? "":startFrom, delegate: self)
+        let service = AlamofireService.instance
+        AlamofireProxy(service: service).getNews(startFrom: needClearNews ? "":startFrom, delegate: self)
     }
     
     

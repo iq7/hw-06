@@ -121,15 +121,18 @@ extension SearchGroupViewController: UITableViewDelegate, UITableViewDataSource 
 extension SearchGroupViewController {
     
     private func getGroups(by search: String) {
-        AlamofireService.instance.searchGroups(search: search, delegate: self)
+        let service = AlamofireService.instance
+        AlamofireProxy(service: service).searchGroups(search: search, delegate: self)
     }
     
     private func leaveGroup(by gid: Int) {
-        AlamofireService.instance.leaveGroup(gid: gid, delegate: self)
+        let service = AlamofireService.instance
+        AlamofireProxy(service: service).leaveGroup(gid: gid, delegate: self)
     }
     
     private func joinGroup(by gid: Int) {
-        AlamofireService.instance.joinGroup(gid: gid, delegate: self)
+        let service = AlamofireService.instance
+        AlamofireProxy(service: service).joinGroup(gid: gid, delegate: self)
     }
 }
 

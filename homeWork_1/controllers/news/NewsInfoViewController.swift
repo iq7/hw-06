@@ -32,7 +32,8 @@ class NewsInfoViewController: UIViewController {
     }
     
     private func prepareGetComments() {
-        AlamofireService.instance.getComments(ownerId: feed.sourceId, postId: feed.feedId, delegate: self)
+        let service = AlamofireService.instance
+        AlamofireProxy(service: service).getComments(ownerId: feed.sourceId, postId: feed.feedId, delegate: self)
     }
     
 

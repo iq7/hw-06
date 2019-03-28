@@ -38,7 +38,8 @@ class FriendInfoViewController: UIViewController {
     
     private func parseFriend() {
         self.navigationItem.title = friend.last_name + " " + friend.first_name
-        AlamofireService.instance.getPhotosBy(friend.uid, delegate: self)
+        let service = AlamofireService.instance
+        AlamofireProxy(service: service).getPhotosBy(friend.uid, delegate: self)
     }
     
 
