@@ -14,7 +14,14 @@ protocol Coffee {
 
 protocol CoffeeDecorator: Coffee {
     var base: Coffee { get }
+    var additionCoast: Int { get }
     init(base: Coffee)
+}
+
+extension CoffeeDecorator {
+    var cost: Int {
+        return self.base.cost + self.additionCoast
+    }
 }
 
 class SimpleCoffee: Coffee {
@@ -25,9 +32,8 @@ class SimpleCoffee: Coffee {
 
 class Milk: CoffeeDecorator {
     let base: Coffee
-    
-    var cost: Int {
-        return base.cost + 50
+    var additionCoast: Int {
+        return 50
     }
     
     required init(base: Coffee) {
@@ -37,9 +43,8 @@ class Milk: CoffeeDecorator {
 
 class Whip: CoffeeDecorator {
     let base: Coffee
-    
-    var cost: Int {
-        return base.cost + 75
+    var additionCoast: Int {
+        return 75
     }
     
     required init(base: Coffee) {
@@ -49,10 +54,13 @@ class Whip: CoffeeDecorator {
 
 class Sugar: CoffeeDecorator {
     let base: Coffee
-    
-    var cost: Int {
-        return base.cost + 25
+    var additionCoast: Int {
+        return 25
     }
+    // Оставил для примера
+    // var cost: Int {
+    //    return self.base.cost + self.additionCoast
+    // }
     
     required init(base: Coffee) {
         self.base = base
