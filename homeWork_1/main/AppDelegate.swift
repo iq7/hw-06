@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         setKeyboardSettings()
+        initCoffee()
         return true
     }
     

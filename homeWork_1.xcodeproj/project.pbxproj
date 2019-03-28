@@ -60,6 +60,7 @@
 		AA5766FA2160EFE50029F786 /* NewsTableViewCellOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5766F92160EFE50029F786 /* NewsTableViewCellOld.swift */; };
 		AA5766FD2160F0C10029F786 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5766FC2160F0C10029F786 /* NewsViewController.swift */; };
 		AA5766FF2160F2CD0029F786 /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5766FE2160F2CD0029F786 /* New.swift */; };
+		D9AA87DC224CBED60034413D /* CoffeeDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AA87DB224CBED60034413D /* CoffeeDecorator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +120,7 @@
 		AA5766FE2160F2CD0029F786 /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
 		B1F60E259C4E88A48D0AC259 /* Pods-homeWork_1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homeWork_1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-homeWork_1/Pods-homeWork_1.debug.xcconfig"; sourceTree = "<group>"; };
 		CE1F4887F01F3E518C13D6ED /* Pods-homeWork_1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homeWork_1.release.xcconfig"; path = "Pods/Target Support Files/Pods-homeWork_1/Pods-homeWork_1.release.xcconfig"; sourceTree = "<group>"; };
+		D9AA87DB224CBED60034413D /* CoffeeDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDecorator.swift; sourceTree = "<group>"; };
 		FB03EE607AE3B19FD932EA7A /* Pods_homeWork_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_homeWork_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -285,6 +287,7 @@
 				AA5766CA2160A5AF0029F786 /* Assets.xcassets */,
 				AA5766CC2160A5AF0029F786 /* LaunchScreen.storyboard */,
 				AA5766E22160AD140029F786 /* Extension.swift */,
+				D9AA87DB224CBED60034413D /* CoffeeDecorator.swift */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -569,6 +572,7 @@
 				AA3D1EB121B25109000ED1C1 /* FirebaseService.swift in Sources */,
 				842A03E0216C860000FAFF92 /* CustomIndicator.swift in Sources */,
 				8415662D21B7916500AF9803 /* SearchGroupViewController.swift in Sources */,
+				D9AA87DC224CBED60034413D /* CoffeeDecorator.swift in Sources */,
 				84D1DEC021AE8AB9006FC20E /* VkCommentProfile.swift in Sources */,
 				84A74D8321EDC12900AE5A76 /* NewsTableViewCell.swift in Sources */,
 				844ACE352186BFC500565895 /* VkFriend.swift in Sources */,

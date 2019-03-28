@@ -30,7 +30,7 @@ class FirebaseService {
         let fGroup = FirebaseService.dbLink.child("groups").child(Session.instance.token).child("\(group.gid)")
         
         fGroup.removeValue { error, _ in
-            print("firebase remove error: \(error?.localizedDescription)")
+            print("firebase remove error: \(String(describing: error?.localizedDescription))")
         }
     }
     
